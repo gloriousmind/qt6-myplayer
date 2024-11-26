@@ -90,7 +90,7 @@ void MyLrc::mousePressEvent(QMouseEvent * event)
 {
     if (event->button() == Qt::LeftButton)
     {
-        offset = event->globalPos() - frameGeometry().topLeft();
+        offset = event->globalPosition().toPoint() - frameGeometry().topLeft();
     }
 }
 
@@ -99,7 +99,7 @@ void MyLrc::mouseMoveEvent(QMouseEvent * event)
     if (event->buttons() & Qt::LeftButton)
     {
         setCursor(Qt::PointingHandCursor);
-        move(event->globalPos() - offset);
+        move(event->globalPosition().toPoint() - offset);
     }
 }
 
