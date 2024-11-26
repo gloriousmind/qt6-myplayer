@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QSlider>
 #include <QToolBar>
-#include <QLayout>
+#include <QVBoxLayout>
 #include <QTime>
 #include <QMessageBox>
 #include "myplaylist.h"
