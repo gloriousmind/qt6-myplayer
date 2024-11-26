@@ -59,7 +59,6 @@ private:
     QLabel *topLabel;
     QLabel *timeLabel;
     QSlider * mediaProgress;
-    //QLabel * x;
 
     //播放列表相关
     MyPlaylist *playlist;
