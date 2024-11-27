@@ -19,7 +19,6 @@
 #include <QRegularExpressionMatchIterator>
 #include <QRegularExpressionMatch>
 
-int count = 0;
 MyWidget::MyWidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::MyWidget)
