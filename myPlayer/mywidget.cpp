@@ -151,10 +151,14 @@ void MyWidget::initPlayer()
     mainLayout->addWidget(toolBar);
     setLayout(mainLayout);
 
-    connect(mediaObject_ctrl_playback, SIGNAL(playbackStateChanged(QMediaPlayer::PlaybackState)), this, SLOT(playbackStateChanged(QMediaPlayer::PlaybackState)));
-    connect(mediaObject_ctrl_playback, SIGNAL(mediaStatusChanged(QMediaPlayer::MediaStatus)), this, SLOT(playback_mediaStatusChanged(QMediaPlayer::MediaStatus)));
-    connect(mediaObject_ctrl_resolve, SIGNAL(mediaStatusChanged(QMediaPlayer::MediaStatus)), this, SLOT(resolve_mediaStatusChanged(QMediaPlayer::MediaStatus)));
-    connect(mediaObject_ctrl_playback, SIGNAL(errorOccurred(QMediaPlayer::Error, const QString &)), this, SLOT(showError(QMediaPlayer::Error, const QString &)));
+    connect(mediaObject_ctrl_playback, SIGNAL(playbackStateChanged(QMediaPlayer::PlaybackState)),
+            this, SLOT(playbackStateChanged(QMediaPlayer::PlaybackState)));
+    connect(mediaObject_ctrl_playback, SIGNAL(mediaStatusChanged(QMediaPlayer::MediaStatus)),
+            this, SLOT(playback_mediaStatusChanged(QMediaPlayer::MediaStatus)));
+    connect(mediaObject_ctrl_resolve, SIGNAL(mediaStatusChanged(QMediaPlayer::MediaStatus)),
+            this, SLOT(resolve_mediaStatusChanged(QMediaPlayer::MediaStatus)));
+    connect(mediaObject_ctrl_playback, SIGNAL(errorOccurred(QMediaPlayer::Error, const QString &)),
+            this, SLOT(showError(QMediaPlayer::Error, const QString &)));
 
     playlist = new MyPlaylist(this);
     playlist->resize(400, this->height());
@@ -185,10 +189,10 @@ void MyWidget::initPlayer()
     menu->addAction(LRCAction);
     menu->addSeparator();
     menu->addAction("退出", qApp, SLOT(quit()));
-    trayIcon->setContextMenu(menu);
-
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
+    trayIcon->setContextMenu(menu);
+
     trayIcon->show();
 }
 
@@ -202,7 +206,7 @@ void MyWidget::updateTime(qint64 time)
     timeLabel->setText(str);
 
 
-    //歌词文件更新
+    //歌词显示更新
     if (!lrcMap.empty())
     {
         int cur_time = 0;
@@ -603,8 +607,6 @@ void MyWidget::resolveLrc(const QString & sourceFileName)
         lrc->setText(mediaObject_ctrl_playback->source().fileName() + " --- 未找到歌词文件");
         return;
     }
-    //设置字符串编码
-    QTextCodec::setCodecForLocale(QTextCodec::codecForLocale());
     //获取全部歌词信息
     QString allText = QString(file.readAll());
     file.close();
