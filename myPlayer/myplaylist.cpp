@@ -1,6 +1,7 @@
 #include "myplaylist.h"
 #include <QMenu>
 #include <QContextMenuEvent>
+#include <iostream>
 
 MyPlaylist::MyPlaylist(QWidget * parent) : QTableWidget(parent)
 {
@@ -46,5 +47,7 @@ void MyPlaylist::closeEvent(QCloseEvent * event)
     {
         event->accept();
     }
+    else
+        event->ignore();
 }
 
