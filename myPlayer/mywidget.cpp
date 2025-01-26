@@ -144,7 +144,6 @@ void MyWidget::initPlayer()
 
     //创建界面布局管理器
     QVBoxLayout * mainLayout = new QVBoxLayout;
-
     mainLayout->addWidget(topLabel);
     mainLayout->addWidget(mediaProgress);
     mainLayout->addWidget(widgetBar);

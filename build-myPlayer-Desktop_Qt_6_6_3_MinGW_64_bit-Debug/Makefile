@@ -392,12 +392,11 @@ Makefile: ../myPlayer/myPlayer.pro ../../../../qt/6.6.3/mingw_64/mkspecs/win32-g
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/resources_functions.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/resources.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/moc.prf \
-		../../../../qt/6.6.3/mingw_64/mkspecs/features/testlib_defines.prf \
-		../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/console.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/opengl.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/uic.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/qmake_use.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/file_copies.prf \
+		../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/windows.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/testcase_targets.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/exceptions.prf \
 		../../../../qt/6.6.3/mingw_64/mkspecs/features/yacc.prf \
@@ -407,7 +406,6 @@ Makefile: ../myPlayer/myPlayer.pro ../../../../qt/6.6.3/mingw_64/mkspecs/win32-g
 		../../../../qt/6.6.3/mingw_64/lib/Qt6Widgets.prl \
 		../../../../qt/6.6.3/mingw_64/lib/Qt6Gui.prl \
 		../../../../qt/6.6.3/mingw_64/lib/Qt6Network.prl \
-		../../../../qt/6.6.3/mingw_64/lib/Qt6Test.prl \
 		../../../../qt/6.6.3/mingw_64/lib/Qt6Core5Compat.prl \
 		../../../../qt/6.6.3/mingw_64/lib/Qt6Core.prl \
 		../../../../qt/6.6.3/mingw_64/lib/Qt6EntryPoint.prl \
@@ -736,12 +734,11 @@ Makefile: ../myPlayer/myPlayer.pro ../../../../qt/6.6.3/mingw_64/mkspecs/win32-g
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/resources_functions.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/resources.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/moc.prf:
-../../../../qt/6.6.3/mingw_64/mkspecs/features/testlib_defines.prf:
-../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/console.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/opengl.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/uic.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/qmake_use.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/file_copies.prf:
+../../../../qt/6.6.3/mingw_64/mkspecs/features/win32/windows.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/testcase_targets.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/exceptions.prf:
 ../../../../qt/6.6.3/mingw_64/mkspecs/features/yacc.prf:
@@ -751,7 +748,6 @@ Makefile: ../myPlayer/myPlayer.pro ../../../../qt/6.6.3/mingw_64/mkspecs/win32-g
 ../../../../qt/6.6.3/mingw_64/lib/Qt6Widgets.prl:
 ../../../../qt/6.6.3/mingw_64/lib/Qt6Gui.prl:
 ../../../../qt/6.6.3/mingw_64/lib/Qt6Network.prl:
-../../../../qt/6.6.3/mingw_64/lib/Qt6Test.prl:
 ../../../../qt/6.6.3/mingw_64/lib/Qt6Core5Compat.prl:
 ../../../../qt/6.6.3/mingw_64/lib/Qt6Core.prl:
 ../../../../qt/6.6.3/mingw_64/lib/Qt6EntryPoint.prl:
