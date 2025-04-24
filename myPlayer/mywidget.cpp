@@ -577,6 +577,8 @@ void MyWidget::setLrcShown()
         pos.setX(frameGeometry().bottomLeft().x());
         pos.setY(frameGeometry().bottomLeft().y() + 50);
         lrc->move(pos);
+        if (lrc->text() == "")
+            lrc->setText("MyMediaPlayer");
         lrc->show();
     }
     else
